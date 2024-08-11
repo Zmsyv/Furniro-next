@@ -14,6 +14,9 @@ const config = {
       orange: `#B88E2F`,
       lightOrange1: "#FFF3E3",
       lightOrange2: "#FCF8F3",
+      red: "#E97171",
+      blue: "#2EC1AC",
+      light: "#9F9F9F",
     },
 
     container: {

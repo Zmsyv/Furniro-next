@@ -22,9 +22,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={nunito.className}>
-        <TheHeader/>
-        {children}
-        <TheFooter/> 
+        <TheHeader />
+        <main className=" pt-[50px] pb-[50px]">{children}</main>
+        <TheFooter />
       </body>
     </html>
   );

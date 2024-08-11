@@ -23,7 +23,7 @@ const Help = () => {
   return (
     <div>
       <div className="pb-[55px] max-sm:pb-[25px] max-md:pb-[25px]">
-        <p className="text-gray-400">Help</p>
+        <p className="text-light">Help</p>
       </div>
       <ul className="flex-wrap  justify-center items-center">
         {helpData.map((item) => (

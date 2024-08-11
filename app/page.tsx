@@ -1,5 +1,10 @@
+import CardMain from "@/components/card/CardMain";
+import SectionMain from "@/components/screens/home/SectionMain";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24"></main>
+    <>
+    <SectionMain/>
+    </>
   );
 }

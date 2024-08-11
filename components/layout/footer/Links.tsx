@@ -28,7 +28,7 @@ const Links = () => {
   return (
     <div>
       <div className="pb-[55px] max-sm:pb-[25px] max-md:pb-[25px]">
-        <p className="text-gray-400">Links</p>
+        <p className="text-light">Links</p>
       </div>
       <ul className="flex-wrap  justify-center items-center">
         {linksData.map((item) => (

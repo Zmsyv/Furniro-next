@@ -7,7 +7,7 @@ const Furniro = () => {
         <strong className="text-[24px]">Furniro.</strong>
       </div>
       <div>
-        <p>400 University Drive Suite 200 Coral <br />
+        <p className="text-light">400 University Drive Suite 200 Coral <br />
              Gables,<br /> FL 33134 USA</p>
       </div>
     </div>

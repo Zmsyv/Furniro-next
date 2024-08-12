@@ -27,7 +27,9 @@ const BrowseList = () => {
         {browseData.map((item) => (
           <li className=" " key={item.id}>
             <Image src={item.src} width={381} height={480} alt="" />
-            <p className="text-[24px] text-center pt-[30px] font-bold">{item.title}</p>
+            <p className="text-[24px] text-center pt-[30px] font-bold">
+              {item.title}
+            </p>
           </li>
         ))}
       </ul>

@@ -17,6 +17,8 @@ const config = {
       red: "#E97171",
       blue: "#2EC1AC",
       light: "#9F9F9F",
+      gray: "#F4F5F7",
+      white: "#FFFFFF",
     },
 
     container: {

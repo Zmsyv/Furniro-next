@@ -9,7 +9,7 @@ const productData = [
     alt: "",
     title: "Syltherine",
     category: "Stylish cafe chair",
-    total:3500000,
+    total: 3500000,
     tags: {
       isNew: false,
       isDiscount: true,
@@ -87,7 +87,7 @@ const productData = [
     alt: "",
     title: "Pinkgy",
     category: "Cute bed set",
-    total: 7000000 ,
+    total: 7000000,
     tags: {
       isNew: false,
       isDiscount: true,
@@ -114,7 +114,7 @@ const ProductListItem = () => {
     <div className="">
       <ul className=" grid grid-cols-4 gap-[32px] max-sm:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
         {productData.map((item) => (
-          <li  className=" w-[285px] h-[446px]" key={item.id}>
+          <li className=" w-[285px] h-[446px]" key={item.id}>
             <div className=" relative ">
               <div className="flex  items-center p-4 gap-2 absolute top-3 right-3 z-10 ">
                 {item.tags.isDiscount && (
@@ -133,17 +133,18 @@ const ProductListItem = () => {
               </div>
             </div>
 
-            <div className="pl-[16px] w-[285px] bg-lightOrange1">
+            <div className="pl-[16px] w-[285px] bg-gray">
               <h3 className=" font-bold text-[24px] pt-4 ">{item.title}</h3>
               <h4 className="text-light py-[8px]">{item.category}</h4>
               <div className="flex justify-between">
-              <h3 className="font-bold pb-[30px]">{item.total- item.total * item.tags.discount /100} $</h3>
-              {item.tags.isDiscount && (
+                <h3 className="font-bold pb-[30px]">
+                  {item.total - (item.total * item.tags.discount) / 100} $
+                </h3>
+                {item.tags.isDiscount && (
                   <div className=" text-light pr-[16px] line-through">
-                    { item.total } $
+                    {item.total} $
                   </div>
                 )}
-
               </div>
             </div>
           </li>

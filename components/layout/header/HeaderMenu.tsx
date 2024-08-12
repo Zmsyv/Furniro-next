@@ -3,7 +3,7 @@ import React from "react";
 
 const HeaderMenu = () => {
   return (
-    <div className="hidden ">
+    <div className="hidden max-sm:flex sm:flex xl:hidden  pr-24">
       <Image
         src="./images/menuIcon.svg"
         width={28}

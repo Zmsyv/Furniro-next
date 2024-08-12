@@ -26,7 +26,7 @@ const menuData = [
 
 const Menu = () => {
   return (
-    <ul className="flex sm:hidden lg:flex gap-[75px] pl-[266px] pt-[12px] justify-center items-center">
+    <ul className="flex max-sm:hidden sm:hidden lg:hidden xl:flex gap-[75px] pl-[266px] pt-[12px] justify-center items-center">
       {menuData.map((item) => (
         <li key={item.id}>
           <Link href={item.url}>{item.title}</Link>

@@ -27,16 +27,13 @@ const iconData = [
 
 const HeaderIcon = () => {
   return (
-    <ul className="flex gap-[75px] pl-[266px] pt-[12px] justify-center items-center ">
+    <ul className="flex max-sm:hidden sm:hidden lg:flex xl:flex gap-[75px] pl-[266px] pt-[12px] justify-center items-center ">
       {iconData.map((item) => (
         <li key={item.id}>
           <Link href={item.title}>
-            <Image
-              src={item.src}
-              width={28}
-              height={28}
-              alt=""
-            />
+            <div className="w-[28px] h-[28px]">
+              <Image src={item.src} width={28} height={28} alt="" />
+            </div>
           </Link>
         </li>
       ))}
@@ -45,4 +42,3 @@ const HeaderIcon = () => {
 };
 
 export default HeaderIcon;
-

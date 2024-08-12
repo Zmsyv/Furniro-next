@@ -7,7 +7,7 @@ import HeaderMenu from "./HeaderMenu";
 
 const TheHeader = () => {
   return (
-    <div className="flex  pt-[29px] ">
+    <div className="flex justify-between pt-[29px] ">
       <Link href="/" className="">
         <Logo />
       </Link>

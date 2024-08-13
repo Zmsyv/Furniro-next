@@ -30,7 +30,7 @@ const config = {
     },
     extend: {
       backgroundImage: {
-        'hero-pattern': "url('./images/heroBackground.svg')",
+        'hero-pattern': "url('/images/hero.svg')",
       },
       colors: {
         border: "hsl(var(--border))",

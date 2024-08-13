@@ -23,7 +23,7 @@ const browseData = [
 const BrowseList = () => {
   return (
     <div>
-      <ul className=" flex gap-[20px] ">
+      <ul className=" grid grid-cols-3 sm:grid-cols-1 max-sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3  gap-[20px]  ">
         {browseData.map((item) => (
           <li className=" " key={item.id}>
             <Image src={item.src} width={381} height={480} alt="" />

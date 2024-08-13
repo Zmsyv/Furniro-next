@@ -1,5 +1,7 @@
 import CardTags from "@/components/card/CardTags";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const productData = [
@@ -60,7 +62,7 @@ const productData = [
     src: "./images/chair.svg",
     alt: "",
     title: "Grifo",
-    category: "dgjwdjhd",
+    category: "Night lamp",
     total: 1500000,
     tags: {
       isNew: false,
@@ -128,8 +130,28 @@ const ProductListItem = () => {
                   </div>
                 )}
               </div>
-              <div className="">
-                <Image src={item.src} width={285} height={301} alt={item.alt} />
+              <div className=" flex justify-center items-center w-[100%] h-[100%]">
+                <div className="w-[100%]  ">
+                  <Image
+                    src={item.src}
+                    width={285}
+                    height={301}
+                    alt={item.alt}
+                  />
+                  <div className="absolute  w-[100%] h-[100%] top-0 left-0 bg-lightOrange1 flex justify-center items-center flex-col opacity-0 ease-in duration-300 hover:opacity-70 ">
+                    <Button
+                      variant="outline"
+                      className=" w-[50%] sm:w-10 md:w-24 lg:w-40 xl:w-60 text-orange border-orange "
+                    >
+                      <p>Add to cart</p>
+                    </Button>
+                    <div className=" flex text-[16px] pt-4  gap-4 ">
+                      <Link href="/share">Share</Link>
+                      <Link href="/lompare">Compare</Link>
+                      <Link href="/like">Like</Link>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 

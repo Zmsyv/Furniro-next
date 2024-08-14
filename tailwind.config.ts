@@ -18,6 +18,7 @@ const config = {
       blue: "#2EC1AC",
       light: "#9F9F9F",
       gray: "#F4F5F7",
+      boldgray: "#3A3A3A",
       white: "#FFFFFF",
     },
 
@@ -29,9 +30,9 @@ const config = {
       },
     },
     extend: {
-      backgroundImage: {
-        'hero-pattern': "url('/images/hero.svg')",
-      },
+      // backgroundImage: {
+      //   "hero-image": "url(./images/table.svg)",
+      // },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

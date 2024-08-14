@@ -4,7 +4,7 @@ import React from "react";
 
 const HeroMain = () => {
   return (
-    <div className="bg-light h-[720px] pl-[50%] pt-[90px] max-sm:pl-[25%] sm:pl-[25%] md:pl-[35%] lg:pl-[50%]   ">
+    <div className="bg-gray h-[720px] pl-[50%] pt-[90px] max-sm:pl-[25%] sm:pl-[25%] md:pl-[35%] lg:pl-[50%]   ">
       <div className=" bg-lightOrange1 w-[80%] h-[70%] pl-[41px]  ">
         <h3 className="text-[16px] font-bold pt-[62px]">New Arrival</h3>
         <h2 className="text-[52px] font-bold text-orange pb-[17px]">Discover Our New Collection</h2>

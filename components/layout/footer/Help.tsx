@@ -27,9 +27,9 @@ const Help = () => {
       </div>
       <ul className="flex-wrap  justify-center items-center">
         {helpData.map((item) => (
-          <li
+          <li 
             key={item.id}
-            className="pb-[46px] max-sm:pb-[20px] max-md:pb-[20px] "
+            className="pb-[46px] max-sm:pb-[20px] max-md:pb-[20px] hover:text-orange "
           >
             <Link href={item.url}>{item.title}</Link>
           </li>

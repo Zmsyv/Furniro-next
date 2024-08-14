@@ -32,7 +32,10 @@ const Links = () => {
       </div>
       <ul className="flex-wrap  justify-center items-center">
         {linksData.map((item) => (
-          <li key={item.id} className="pb-[46px] max-sm:pb-[20px] max-md:pb-[20px] ">
+          <li
+            key={item.id}
+            className="pb-[46px] max-sm:pb-[20px] max-md:pb-[20px] hover:text-orange"
+          >
             <Link href={item.url}>{item.title}</Link>
           </li>
         ))}

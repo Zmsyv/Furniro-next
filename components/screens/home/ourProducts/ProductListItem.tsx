@@ -5,6 +5,7 @@ import Link from "next/link";
 import React from "react";
 import ProductFooter from "./ProductFooter";
 import ProductHeader from "./ProductHeader";
+import Hover from "./Hover";
 
 const productData = [
   {
@@ -120,23 +121,10 @@ const ProductListItem = () => {
         {productData.map((item) => (
           <li className=" w-[285px] h-[446px]" key={item.id}>
             <div className="relative">
-            <ProductHeader item={item} />
-            <ProductFooter item={item} />
-            <div className="absolute  w-[100%] h-[100%] top-0 left-0 bg-boldgray flex justify-center items-center flex-col opacity-0 ease-in duration-100 hover:opacity-70 ">
-                    <Button
-                      variant="outline"
-                      className=" w-[50%] sm:w-10 md:w-24 lg:w-40 xl:w-60 text-orange border-orange "
-                    >
-                      <p>Add to cart</p>
-                    </Button>
-                    <div className=" flex text-[16px] text-white pt-4  gap-4 ">
-                      <Link href="/share" ><p className=" text-white hover:text-red">Share</p></Link>
-                      <Link href="/lompare"><p className=" text-white hover:text-red">Compare</p></Link>
-                      <Link href="/like"><p className=" text-white hover:text-red">Like</p></Link>
-                    </div>
-                  </div>
+              <ProductHeader item={item} />
+              <ProductFooter item={item} />
+              <Hover/>
             </div>
-
           </li>
         ))}
       </ul>

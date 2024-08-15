@@ -31,18 +31,15 @@ const trophiesData = [
 const TrophiesList = () => {
   return (
     <div>
-      <ul className="flex justify-between bg-lightOrange1
-       px-[53px] py-[105px] gap-[55px] ">
+      <ul
+        className="flex justify-between bg-lightOrange1
+       px-[53px] py-[105px] gap-[55px] "
+      >
         {trophiesData.map((item) => (
           <li key={item.id}>
             <div className="flex gap-[10px] ">
               <div>
-                <Image
-                  src={item.src}
-                  width={60}
-                  height={60}
-                  alt=""
-                />
+                <Image src={item.src} width={60} height={60} alt="" />
               </div>
               <div>
                 <h2 className="text-[25px] font-bold">{item.title}</h2>

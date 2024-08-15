@@ -7,10 +7,10 @@ import HeroMain from "./hero/HeroMain";
 const SectionMain = () => {
   return (
     <div>
-      <HeroMain />
-      <BrowseMain />
+      {/* <HeroMain /> */}
+      {/* <BrowseMain /> */}
       <OurProductMain />
-      <ExploreMain />
+      {/* <ExploreMain /> */}
     </div>
   );
 };

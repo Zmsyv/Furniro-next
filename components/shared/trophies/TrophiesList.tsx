@@ -33,7 +33,7 @@ const TrophiesList = () => {
     <div>
       <ul
         className="flex justify-between bg-lightOrange1
-       px-[53px] py-[105px] gap-[55px] "
+       px-[53px] py-[105px]  "
       >
         {trophiesData.map((item) => (
           <li key={item.id}>

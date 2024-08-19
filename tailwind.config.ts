@@ -20,6 +20,9 @@ const config = {
       gray: "#F4F5F7",
       boldgray: "#3A3A3A",
       white: "#FFFFFF",
+      peach:"#F9F1E7",
+      colorblue:"#816DFA",
+      black:"#000000"
     },
 
     container: {

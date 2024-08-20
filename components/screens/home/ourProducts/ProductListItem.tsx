@@ -119,13 +119,15 @@ const ProductListItem = () => {
     <>
       <ul className=" grid grid-cols-4 gap-[32px] max-sm:grid-cols-1  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
         {productData.map((item) => (
-          <li className=" w-[285px] h-[446px]" key={item.id}>
-            <div className="relative">
+          <Link href="single-product">
+            <li className=" w-[100%] h-[446px]" key={item.id}>
+            <div className="relative w-[100%]">
               <ProductHeader item={item} />
               <ProductFooter item={item} />
               <Hover/>
             </div>
           </li>
+          </Link>
         ))}
       </ul>
     </>

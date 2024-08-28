@@ -22,7 +22,7 @@ const ProductHeader = ({ item }) => {
       </div>
       <div className="  flex justify-center items-center w-[100%] h-[100%]">
         <div className="relative ">
-          <Image src={item.src} fill alt={item.alt} />
+          <Image src={item.src} width={300} height={300} alt={item.alt} />
         </div>
       </div>
     </div>

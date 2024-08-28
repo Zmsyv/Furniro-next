@@ -14,7 +14,6 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { toast } from "@/components/ui/use-toast";
 
 const FormSchema = z.object({
   type: z.enum(["black", "blue", "orange"], {
@@ -22,7 +21,7 @@ const FormSchema = z.object({
   }),
 });
 
-function ColorPicker() {
+function SizePicker() {
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
   });
@@ -40,7 +39,7 @@ function ColorPicker() {
           name="type"
           render={({ field }) => (
             <FormItem className="space-y-3">
-              <FormLabel className="text-light ">Color</FormLabel>
+              <FormLabel className="text-light ">Size</FormLabel>
               <FormControl>
                 <RadioGroup
                   onValueChange={field.onChange}
@@ -49,21 +48,27 @@ function ColorPicker() {
                 >
                   <FormItem className="flex items-center gap-[16px] space-y-0 ">
                     <FormControl>
-                      <RadioGroupItem value="blue" className="hidden" />
+                      <RadioGroupItem value="L" className="hidden" />
                     </FormControl>
-                    <FormLabel className="w-7 h-7 rounded-full bg-blue "></FormLabel>
+                    <FormLabel className="w-7 h-7 flex justify-center items-center active:bg-orange">
+                      L
+                    </FormLabel>
                   </FormItem>
-                  <FormItem className="flex items-center space-y-0">
+                  <FormItem className="flex items-center space-y-0 active:bg-orange">
                     <FormControl>
-                      <RadioGroupItem value="black" className="hidden" />
+                      <RadioGroupItem value="XL" className="hidden" />
                     </FormControl>
-                    <FormLabel className="w-7 h-7 rounded-full bg-black"></FormLabel>
+                    <FormLabel className="w-7 h-7 flex justify-center items-center">
+                      XL
+                    </FormLabel>
                   </FormItem>
-                  <FormItem className="flex items-center space-y-0">
+                  <FormItem className="flex items-center space-y-0 active:bg-orange">
                     <FormControl>
-                      <RadioGroupItem value="orange" className="hidden" />
+                      <RadioGroupItem value="XS" className="hidden" />
                     </FormControl>
-                    <FormLabel className="w-7 h-7 rounded-full bg-orange"></FormLabel>
+                    <FormLabel className="w-7 h-7 flex justify-center items-center ">
+                      XS
+                    </FormLabel>
                   </FormItem>
                 </RadioGroup>
               </FormControl>
@@ -71,10 +76,9 @@ function ColorPicker() {
             </FormItem>
           )}
         />
-        {/* <Button type="submit">Submit</Button> */}
       </form>
     </Form>
   );
 }
 
-export default ColorPicker;
+export default SizePicker;

@@ -1,8 +1,6 @@
-import CardTags from "@/components/card/CardTags";
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+
 import Link from "next/link";
-import React from "react";
+import React, { Children } from "react";
 import ProductFooter from "./ProductFooter";
 import ProductHeader from "./ProductHeader";
 import Hover from "./Hover";
@@ -121,12 +119,12 @@ const ProductListItem = () => {
         {productData.map((item) => (
           <Link href="single-product">
             <li className=" w-[100%] h-[446px]" key={item.id}>
-            <div className="relative w-[100%]">
-              <ProductHeader item={item} />
-              <ProductFooter item={item} />
-              <Hover/>
-            </div>
-          </li>
+              <div className="relative w-[100%]">
+                <ProductHeader item={item} />
+                <ProductFooter item={item} />
+                <Hover />
+              </div>
+            </li>
           </Link>
         ))}
       </ul>

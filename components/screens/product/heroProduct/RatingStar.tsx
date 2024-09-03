@@ -1,3 +1,4 @@
+'use client'
 import React, { useState } from "react";
 import { Rating } from "react-simple-star-rating";
 
@@ -18,7 +19,8 @@ export function RatingStar() {
 
   return (
     <div className="App">
-      <Rating
+      <Rating className=""
+      style={{display: 'flex', flexDirection: 'row'}}
         onClick={handleRating}
         onPointerEnter={onPointerEnter}
         onPointerLeave={onPointerLeave}
@@ -28,3 +30,6 @@ export function RatingStar() {
     </div>
   );
 }
+
+
+

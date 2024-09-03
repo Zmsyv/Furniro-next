@@ -1,9 +1,7 @@
-import Image from "next/image";
 import React from "react";
 import HeroProductList from "./HeroProductList";
 import ColorPicker from "../ColorPicker";
 import SizePicker from "./SizePicker";
-import { CarouselPlugin } from "./Caorusel";
 import { Button } from "@/components/ui/button";
 import { RatingStar } from "./RatingStar";
 
@@ -18,7 +16,6 @@ const HeroProductMain = () => {
           <h2 className="text-[42px]">Asgaard sofa</h2>
           <p className="text-[24px] text-light">$ 250,000.00</p>
           <div className="flex pb-5">
-            {/* <RatingStar/> */}
             <p>5 Customer Review</p>
           </div>
           <div>
@@ -71,6 +68,7 @@ const HeroProductMain = () => {
         </div>
       </div>
       <hr />
+      {/* <RatingStar/> */}
     </>
   );
 };

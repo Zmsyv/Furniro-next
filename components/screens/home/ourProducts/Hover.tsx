@@ -5,8 +5,7 @@ import React from "react";
 
 const Hover = () => {
   return (
-    <>
-      <div className="absolute  w-[100%] h-[100%] top-0 left-0 bg-boldgray flex justify-center items-center flex-col opacity-0 ease-in duration-100 hover:opacity-70 ">
+    <div className="absolute  w-[100%] h-[100%] top-0 left-0 bg-boldgray flex justify-center items-center flex-col opacity-0 ease-in duration-100 hover:opacity-70 ">
         <Button
           variant="outline"
           className=" w-[50%] sm:w-10 md:w-24 lg:w-40 xl:w-60 text-orange border-orange "
@@ -42,8 +41,7 @@ const Hover = () => {
             <p className=" text-white hover:text-red">Like</p>
           </Link>
         </div>
-      </div>
-    </>
+    </div>
   );
 };
 

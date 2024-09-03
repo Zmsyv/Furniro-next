@@ -1,7 +1,7 @@
-import CardMain from "@/components/card/CardMain";
 import { Button } from "@/components/ui/button";
 import React from "react";
 import ProductListItem from "./ProductListItem";
+import Link from "next/link";
 
 const productData = [{}];
 
@@ -9,6 +9,7 @@ const ProductList = () => {
   return (
     <>
       <div className="">
+        
         <ProductListItem />
       </div>
       <div className=" pt-[32px]  flex justify-center items-center text-center min-[320px]:">

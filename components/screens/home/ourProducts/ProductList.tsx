@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import React from "react";
 import ProductListItem from "./ProductListItem";
-import Link from "next/link";
 
 const productData = [{}];
 
@@ -9,10 +8,9 @@ const ProductList = () => {
   return (
     <>
       <div className="">
-        
         <ProductListItem />
       </div>
-      <div className=" pt-[32px]  flex justify-center items-center text-center min-[320px]:">
+      <div className=" pt-[32px]  flex justify-center items-center text-center ">
         <Button
           variant="outline"
           className=" w-[245px]   sm:w-15 md:w-30 lg:w-45 xl:w-60 text-orange border-orange "

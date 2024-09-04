@@ -9,6 +9,7 @@ const DescriptionMain = () => {
       <DescriptionContent />
       <DescriptionTitle />
       <DescriptionImg />
+
     </div>
   );
 };

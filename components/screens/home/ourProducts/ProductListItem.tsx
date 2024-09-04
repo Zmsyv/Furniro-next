@@ -115,7 +115,7 @@ const productData = [
 const ProductListItem = () => {
   return (
     <>
-      <ul className=" grid grid-cols-4 gap-[32px] max-sm:grid-cols-1  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
+      <ul className=" grid grid-cols-1 gap-[32px]  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
         {productData.map((item) => (
           <Link href="single-product">
             <li className=" w-[100%] h-[446px]" key={item.id}>

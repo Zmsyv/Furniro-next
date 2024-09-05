@@ -64,15 +64,13 @@ const RelatedItem = () => {
     <>
       <ul className=" grid grid-cols-1 gap-[32px]  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
         {productData.map((item) => (
-          <Link href="single-product">
-            <li className=" w-[100%] h-[446px]" key={item.id}>
-              <div className="relative w-[100%]">
-                <ProductHeader item={item} />
-                <ProductFooter item={item} />
-                <Hover />
-              </div>
-            </li>
-          </Link>
+          <li className=" w-[100%] h-full" key={item.id}>
+            <div className="relative w-[100%]">
+              <ProductHeader item={item} />
+              <ProductFooter item={item} />
+              <Hover />
+            </div>
+          </li>
         ))}
       </ul>
     </>

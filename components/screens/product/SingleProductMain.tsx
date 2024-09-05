@@ -7,12 +7,10 @@ import DescriptionMain from "./description/DescriptionMain";
 const SingleProductMain = () => {
   return (
     <div>
-      
       <BreadCrumbMain />
       <HeroProductMain />
       <DescriptionMain/>
       <RelatedMain />
-      
     </div>
   );
 };
